@@ -10,7 +10,7 @@ BOND_LENGTHS = {
     ("C3'", "O3'"): 1.42,
     ("O3'", "P"): 1.60,
 }
-
+#testing
 # Bond angles (in radians)
 BOND_ANGLES = {
     ("P", "O5'", "C5'"): np.deg2rad(119),
@@ -20,7 +20,7 @@ BOND_ANGLES = {
     ("C3'", "O3'", "P"): np.deg2rad(119),
     ("O3'", "P", "O5'"): np.deg2rad(119),
 }
-
+print('testing')
 # Backbone atoms in order
 BACKBONE_ORDER = ["P", "O5'", "C5'", "C4'", "C3'", "O3'"]
 
