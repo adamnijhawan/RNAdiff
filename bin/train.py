@@ -386,7 +386,7 @@ def train(
             dataset=ds,
             batch_size=effective_batch_size,
             shuffle=i == 0,  # Shuffle only train loader
-            num_workers=multiprocessing.cpu_count() if multithread else 1,
+            num_workers=8 if multithread else 1,  # Spawning 64 crashes the program
             pin_memory=True,
         )
         for i, ds in enumerate(dsets)
